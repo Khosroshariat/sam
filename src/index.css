@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Optional: Keep your custom fonts if you like, but remove the fixed widths */
+:root {
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+/* Remove the 1126px restriction that's making your site look narrow */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
